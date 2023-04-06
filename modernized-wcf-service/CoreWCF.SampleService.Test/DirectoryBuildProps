@@ -1,0 +1,23 @@
+<Project>
+
+    <PropertyGroup>
+        <OutputPath>bin\</OutputPath>
+        <AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <WarningLevel>5</WarningLevel>
+        <Configurations>Debug;Release;Debug6;Release6</Configurations>
+        <Platforms>AnyCPU</Platforms>
+        <NoWarn>NU1701</NoWarn>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Debug6'">
+        <ConfigurationGroup>Debug</ConfigurationGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)' == 'Release6'">
+        <ConfigurationGroup>Release</ConfigurationGroup>
+        <TargetFramework>net6.0</TargetFramework>
+    </PropertyGroup>
+
+</Project>

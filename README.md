@@ -1,4 +1,4 @@
-## Reference implementation - Modernizing WCF to CoreWCF 
+## Reference implementation - Modernizing WCF Service to CoreWCF 
 
 This is a reference implementation for modernizing legacy WCF services to CoreWCF.
 
@@ -14,13 +14,13 @@ Structure of the repository:
 ```
 - src
   - client
-     - WCF.SampleService.Client
+      - WCF.SampleService.Client
   - legacy-wcf-service
-     - WCF.SampleService
-     - WCF.SampleService.Test
+      - WCF.SampleService
+      - WCF.SampleService.Test
   - modernized-wcf-service
-     - CoreWCF.SampleService
-     - CoreWCF.SampleService.Test
+      - CoreWCF.SampleService
+      - CoreWCF.SampleService.Test
 ```
 
 - `src\client` contains client application, built with .NET Framework 4.7.2

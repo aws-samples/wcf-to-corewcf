@@ -36,15 +36,17 @@ Structure of the repository:
 
 - legacy-wcf-service
   - Build and publish, using Debug or Release configuration. 
-  - Host on IIS
+  - Host on IIS.
+  - You may have to open Visual Studio as Administrator - to publish to IIS and to execute unit tests.
 
 - modernized-wcf-service 
   - Contains both legacy WCF and CoreWCF implementations.
-  - To build and run legacy WCF service (.NET Framework), use Debug or Release configuration. Host on IIS.
+  - To build and run legacy WCF service (.NET Framework), use Debug or Release configuration. Host on IIS. 
   - To build and run CoreWCF service (.NET 6), use Debug6 or Release6 configuration. Self-hosted on kestrel.
 
 - client application
-   - Edit App.config and update endpoint addresses of the WCF services
+   - Edit App.config and update endpoint addresses of the WCF services.
+   - You may also update the endpoint address by editing the service config under 'Connected services'.
    - Build and run in Debug or Release mode.   
    
 ### Security considerations
